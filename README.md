@@ -8,7 +8,7 @@ PHP on Windows uses the static version of the library, but can be custom
 compiled to link to the dll version, simply remove the static version of the
 library from your LIB path when compiling.
 
-Building for PHP:
+### Building for PHP
 
 
     nmake -f win32/Makefile.msc LOC="-DASMV -DASMINF" OBJA="inffas32.obj match686.obj"
