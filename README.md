@@ -2,7 +2,7 @@
 
 Zlib is a compression tool from [http://zlib.net](http://zlib.net).
 
-The current version is 1.2.7 released May 2, 2012 and is VERY stable.
+The current version is 1.2.7.3 released Apr 13, 2013 and is VERY stable.
 
 PHP on Windows uses the static version of the library, but can be custom
 compiled to link to the dll version, simply remove the static version of the
@@ -11,7 +11,7 @@ library from your LIB path when compiling.
 ### Building for PHP
 
 
-    nmake -f win32/Makefile.msc LOC="-DASMV -DASMINF" OBJA="inffas32.obj match686.obj"
+    nmake -f win32/Makefile.msc
 
-This will create 32 bit zlib_a.lib using the optimized asm code. For the other build options see the win32/Makefile.msc header.
+This will create 32 or 64 bit zlib_a.lib depending on target used. For the other build options see instructions at the top of win32/Makefile.msc.
 
