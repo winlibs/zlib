@@ -1,5 +1,5 @@
 # Makefile for zlib using Microsoft (Visual) C
-# zlib is copyright (C) 1995-2006 Jean-loup Gailly and Mark Adler
+# zlib is copyright (C) 1995-2017 Jean-loup Gailly and Mark Adler
 #
 # Usage:
 #   nmake -f win32/Makefile.msc                          (standard build)
@@ -17,8 +17,8 @@ TOP = .
 LOC =
 
 # variables
-STATICLIB = zlib_a.lib
-SHAREDLIB = zlib.dll
+STATICLIB = zlib.lib
+SHAREDLIB = zlib1.dll
 IMPLIB    = zdll.lib
 
 CC = cl
